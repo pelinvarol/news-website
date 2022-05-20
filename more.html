@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NEWS FROM THE WORLD - PSVNews - News, sport, travel, culture and more.">
+    <meta name="keywords" content="News, Sport, Travel, Culture, PSVNews">
+    <meta name="author" content="Pelin Sena Varol">
+    <!--   <script src="https://kit.fontawesome.com/ca37223591.js" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>MORE - PSVNews</title>
+    <style>
+       
+            * {
+                box-sizing: border-box;
+            }
+        
+
+        #logo {
+            width: 150px;
+            height: 80px;
+            position: relative;
+            top: 5px;
+            left: 30px;
+            display: inline;
+        }
+
+        #morepage {
+            position: relative;
+            top: -3px;
+            font-size: x-large;
+            color: #00b894;
+        }
+
+        #aboutus {
+            background-image: url("https://images.pexels.com/photos/5326909/pexels-photo-5326909.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+            width: 1050px;
+            height: fit-content;
+            border: 7px solid #e55039;
+            text-align: center;
+            align-items: center;
+            margin-top: 50px;
+            margin-left: 190px;
+            padding: 15px;
+            border-radius: 30px 40px 30px 40px;
+            font-family: 'Russo One', sans-serif;
+        }
+
+
+
+        /* #drop-page {
+            position: relative;
+            left: -40px;
+        } 
+        #drop-headline {
+            margin-top: -5px;
+           /* font-family: 'Russo One', sans-serif;
+            font-size: 15px;
+            font-weight: bold;
+            color: rgb(80, 62, 180);
+        }
+        ul ul#more li a:hover {
+            background-color: chocolate;
+        }
+         */
+        #aboutus input[type=text],
+        input[type=email],
+        input[type=tel],
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+
+        input[type=submit] {
+            background-color: #227093;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #ff5252;
+        }
+
+        .container {
+
+            border-radius: 5px;
+            backface-visibility: hidden;
+            padding: 20px;
+            letter-spacing: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="home">
+        <header id="banner">
+            <div id="logo">
+                <a href="home.html"><img src="images/logo6.png" alt="Logo of the website"></a>
+                <div id="headline">
+                    <h1>NEWS FROM THE WORLD</h1>
+                </div>
+            </div>
+        </header>
+        <nav id="mainmenu">
+            <ul>
+                <li><a href="home.html"><span id="homepage">HOME</span></a></li>
+                <li><a href="news.html"><span id="newspage">NEWS</span></a></li>
+                <li><a href="culture.html"><span id="culturepage">CULTURE</span></a></li>
+                <li><a href="travel.html"><span id="travelpage">TRAVEL</span></a></li>
+                <li><a href="sport.html"><span id="sportpage">SPORT</span></a></li>
+                <!--<ul id="more">
+                <li><a href="more.html"></a><span id="morepage">MORE</span></a>
+                    <ul class="dropdown-context">
+                        <li id="drop-page"><a href="aboutus.html"><span id="drop-headline">About Us</span></a></li>
+                        <li id="drop-page"><a href="contactus.html"><span id="drop-headline">Contact Us</span></a></li>
+                    </ul>
+                </li>
+            </ul> -->
+
+                <li><a href="signin.html"><span id="signinpage">SIGN IN</span></a></li>
+                <li><a href="more.html"><span id="morepage">MORE</span></a></li>
+                <!-- <div class="searchBox">
+                        <input class="searchText" type="text" name="searchText" placeholder="Search in PSVNews!">
+                        <a class="searchButton" href="#"></a>
+                        <i class="fas fa-search"></i>
+
+
+                    </div> -->
+                <form id="searchBox" method=GET action="http://www.google.com/search" autocomplete="off">
+                    <label>
+                        <input id="searchText" type="text" name="search" size=30 maxlength=200
+                            placeholder="Search in PSVNews!">
+                    </label>
+                    <input type=hidden name=hl value="en">
+                    <button id="submitButton" type=submit name=search> Search </button>
+                </form>
+            </ul>
+        </nav>
+
+        <div id="aboutus">
+            <h2 style="padding-bottom: 16px;">ABOUT US</h2>
+            <p style="letter-spacing: 2px;"> Me and my friends love to research the news and stay informed about the
+                news around the world. Thus, we can stay up-to-date and improve ourselves.
+                On this site, we bring together news from different fields and share them with you.
+                If you want to be among us as a writer or editor, please let us know by filling out the form in the
+                'Contact Us' section.
+
+            </p> <br>
+            <p style="letter-spacing: 2px;">I would like to meet you as the founder of this site. My name is Pelin
+                Varol. If you join our team, you can be sure that we will welcome you with my teammates.
+                I leave my photo below to meet you.
+
+                You can send us all your questions, suggestions and opinions about the site. Never hesitate to write!
+                Contact us using the form below.
+                We wish you a day with abundant news and especially abundant PSVNews!
+
+            </p> <br> <br>
+            <img style="align-items: center; width:200px; height: 30    0px;" src="images/author.jpeg"> <br> <br> <br>
+
+
+            <div class="container">
+                <h2>CONTACT US</h2> <br><br>
+                <form action="#">
+                    <label for="name">Name - Surname</label>
+                    <input type="text" id="fname" name="name" placeholder="Your name"> <br>
+
+                    <label for="email">E-Mail</label>
+                    <input type="email" id="email" name="email" placeholder="Your mail address"> <br>
+
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" maxlength="11"
+                        placeholder="Your phone number, max length is 11"> <br>
+
+
+                    <label for="issue">Issue</label>
+                    <input type="text" id="issue" name="issue" placeholder="The issue"> <br>
+
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Write the reason you would like to contact us."
+                        style="height:200px"></textarea>
+
+                    <input style="letter-spacing: 3px;" type="submit" value="SEND">
+                </form>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+
+    <footer>
+        <p>All rights deserved by Pelin Sena Varol - 2021</p>
+    </footer>
+
+
+</body>
+
+</html>

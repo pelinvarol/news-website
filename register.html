@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NEWS FROM THE WORLD - PSVNews - News, sport, travel, culture and more.">
+    <meta name="keywords" content="News, Sport, Travel, Culture, PSVNews">
+    <meta name="author" content="Pelin Sena Varol">
+    <title>REGISTER - PSVNews</title>
+
+    <style>
+        body {
+            background: #F8EFBA;
+        }
+
+        h1,
+        h4 {
+            color: #192a56;
+
+        }
+
+
+
+        form {
+            width: 40%;
+            margin: 30px auto;
+            background: #efefef;
+            padding: 60px 120px 80px 120px;
+            text-align: center;
+            -webkit-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+            box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+        }
+
+        a {
+            text-decoration: none;
+            color: #218c74;
+
+        }
+
+        a:hover {
+            color: #58B19F;
+            font-size: larger;
+            font-weight: bolder;
+        }
+
+
+        label {
+            display: block;
+            position: relative;
+            margin: 40px 0px;
+        }
+
+        .label-txt {
+            position: absolute;
+            top: -26px;
+            padding: 10px;
+            font-family: 'Russo One', sans-serif;
+            font-size: 13px;
+            letter-spacing: 1px;
+            color: #787878;
+            transition: ease .3s;
+        }
+
+        select {
+            width: 100%;
+            padding: 10px;
+            align-items: center;
+            background: rgba(85, 230, 193, 0.2);
+        }
+
+        select option {
+            text-align: center;
+        }
+
+        .input,
+        .gender {
+            width: 100%;
+            padding: 10px;
+            /*   background: transparent;*/
+            background: rgba(85, 230, 193, 0.2);
+            border: none;
+            outline: none;
+        }
+
+        .line-box {
+            position: relative;
+            width: 100%;
+            height: 2px;
+            background: #BCBCBC;
+        }
+
+        .line {
+            position: absolute;
+            width: 0%;
+            height: 3px;
+            top: 0px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #182C61;
+            transition: ease 0.4s;
+        }
+
+        .input:focus+.line-box .line {
+            width: 100%;
+        }
+
+
+
+
+        .label-active {
+            top: -48px;
+        }
+
+        button {
+            display: inline-block;
+            text-transform: uppercase;
+            padding: 12px 24px;
+            margin-right: 10px;
+            letter-spacing: 1.5px;
+            background: #A3CB38;
+            font-weight: normal;
+            color: black;
+            border: none;
+            outline: none;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: ease .3s;
+        }
+
+        button:hover {
+            background: #009432;
+            color: black;
+        }
+
+        #resetButton {
+            background: #FD7272;
+            color: black;
+        }
+
+        #resetButton:hover {
+            background: #EA2027;
+            color: #222f3e;
+        }
+
+        span {
+            position: relative;
+            top: -3px;
+        }
+
+        .radio {
+            -webkit-appearance: none;
+            background-color: #fafafa;
+            border: 1px solid #cacece;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+            padding: 9px;
+            border-radius: 30px;
+            display: inline-block;
+            position: relative;
+        }
+
+        .radio:checked:after {
+            content: ' ';
+            width: 12px;
+            height: 12px;
+            border-radius: 30px;
+            position: absolute;
+            top: 3px;
+            background: #009432;
+            box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.3);
+            text-shadow: 0px;
+            left: 3px;
+            font-size: 32px;
+        }
+
+        .radio:checked {
+            background-color: #F8EFBA;
+            color: #218c74;
+            border: 1px solid #009432;
+            box-shadow: 0 1px 2px #FFC312;
+        }
+
+        .radio:active,
+        .radio:checked:active {
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+        }
+
+        .checkbox {
+            -webkit-appearance: none;
+            background-color: #fafafa;
+            border: 1px solid #cacece;
+            box-shadow: 0 1px 2px #006266;
+            padding: 5px;
+            margin-right: 5px;
+            border-radius: 0.5px;
+            display: inline-block;
+            position: relative;
+        }
+
+        .checkbox:checked {
+            background-color: #F8EFBA;
+            border: 1px solid #009432;
+            box-shadow: 0 1px 2px #006266;
+            
+        }
+       
+    </style>
+</head>
+
+<body>
+    <div>
+
+        <form>
+            <h1>REGISTER TO PSVNews!</h1>
+            <h4>Please fill the required information.</h4>
+
+
+            <label> NAME - SURNAME
+                <input type="text" class="input" name="namesurname" autofocus required />
+                <div class="line-box">
+                    <div class="line"></div>
+                </div>
+            </label>
+
+            <label> PASSWORD
+                <input type="password" class="input" name="password" placeholder="Choose a strong password" required />
+                <div class="line-box">
+                    <div class="line"></div>
+                </div>
+            </label>
+            <label> E-MAIL ADDRESS
+                <input type="email" class="input" name="email" required />
+                <div class="line-box">
+                    <div class="line"></div>
+                </div>
+            </label>
+            <label> PHONE-NUMBER
+                <input type="tel" class="input" name="phoneNumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                    placeholder="Enter your phone number in the format of 123-456-78-90" required />
+                <div class="line-box">
+                    <div class="line"></div>
+                </div>
+            </label>
+            <label> DATE OF BIRTH
+                <input type="date" class="input" name="birthDate" required />
+                <div class="line-box">
+                    <div class="line"></div>
+                </div>
+            </label>
+            <div>
+                <label> GENDER </label>
+                <div style="margin-top: -35px; margin-bottom: 5px;" class="line-box">
+                    <div class="line"></div>
+                </div>
+
+                <div>
+                    <input type="radio" id="female" name="gender" class="radio" checked /> Female
+                    <input type="radio" id="male" name="gender" class="radio" /> Male
+                    <input type="radio" id="other" name="gender" class="radio" /> Other
+                </div>
+            </div>
+
+            <label> ABOUT ME
+                <textarea class="input" name="aboutMe" placeholder="Tell us about yourself a little bit!" rows:15
+                    columns: 30></textarea>
+                <div class="line-box">
+                    <div class="line"></div>
+                </div>
+            </label>
+            <div>
+                <label>MARK YOUR INTERESTS <br>
+                    <div class="line-box" style="margin: 10px;">
+                        <div class="line"></div>
+                    </div>
+                    <input type="checkbox" name="Education" class="checkbox" /> <span>Education </span>
+                    <input type="checkbox" name="Gender Equality" class="checkbox" /> <span>Gender Equality</span>
+                    <input type="checkbox" name="Science and Technology" class="checkbox" /><span>Science and Technology</span>
+                    <input type="checkbox" name="Art" class="checkbox" /> <span>Art</span>
+                    <input type="checkbox" name="Economy" class="checkbox" /> <span>Economy</span>
+                    <input type="checkbox" name="Music" class="checkbox" /> <span>Music</span>
+                    <input type="checkbox" name="Coding" class="checkbox" /> <span>Coding</span>
+                    <input type="checkbox" name="Movies and Series" class="checkbox" /> <span>Movies and Series</span>
+                    <input type="checkbox" name="WomenRights" class="checkbox" /> <span>Women Rights</span>
+                    <input type="checkbox" name="Sport" class="checkbox" /> <span>Sport</span> <br>
+                    <input type="checkbox" name="ChildrenRights" class="checkbox" /> <span>Children Rights</span>
+                    <input type="checkbox" name="Blockchain and Cryptocurrency" class="checkbox" /> <span>Blockchain and
+                    Cryptocurrency</span>
+                </label>
+            </div>
+         <span>
+            <span class="wpcf7-form-control-wrap file-698"><input type="file" name="file-698" size="40" class="wpcf7-form-control wpcf7-file" accept=".jpg,.jpeg,.png,.gif,.pdf,.doc,.docx,.ppt,.pptx,.odt,.avi,.ogg,.m4a,.mov,.mp3,.mp4,.mpg,.wav,.wmv" aria-invalid="false"></span>
+ <br> <br>
+       <!-- SIKINTISI YOK İYİ GÖZÜKÜYOR AMA SUBMİT ETTİĞİMDE THANKS.HTML SAYFASINA GİDEMİYORUM. DAHA SONRA BAKILACAK    <b><div style=" margin: auto; text-align: center; color: black; background-color:rgba(85, 230, 193, 0.2);font-size: larger; ">
+                <form  method ="post" enctype="multipart/form-data">
+                    <label for="image">UPLOAD A PHOTO</label>
+                    <input style="padding-left: 70px;" type="file" id="image" name="img" accept="image/*" value="UPLOAD A PHOTO" formaction="thanks.html">
+                </form>
+            </div></b> .
+        button kodları da şu şekilde: 
+            <button style="margin-left: 600px;" id="resetButton" value="reset" name="reset" type="reset">Reset</button>
+            <button class="submitButton" type="submit" value="submit" name="submit" formaction="thanks.html">SUBMIT</button>
+        home: <div><a href="home.html" style="margin-left: 680px;" ><img src="https://img.icons8.com/ios/50/000000/home-screen.png" /></a></div>--> 
+            
+            <button  id="resetButton" value="reset" name="reset" type="reset">Reset</button>
+            <button class="submitButton" type="submit" value="submit" name="submit" formaction="thanks.html">SUBMIT</button>
+         
+            
+
+            <br><br>
+            <!-- <div><a href="home.html"><img src="https://img.icons8.com/cotton/64/000000/home--v3.png"/></a></div>-->
+            <div><a href="home.html"  ><img src="https://img.icons8.com/ios/50/000000/home-screen.png" /></a></div>
+        </form>
+    </div>
+</body>
+</html>

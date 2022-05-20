@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NEWS FROM THE WORLD - PSVNews - News, sport, travel, culture and more.">
+    <meta name="keywords" content="News, Sport, Travel, Culture, PSVNews">
+    <meta name="author" content="Pelin Sena Varol">
+    <!--   <script src="https://kit.fontawesome.com/ca37223591.js" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>NEWS - PSVNews</title>
+    <style>
+     
+
+        #logo {
+            width: 150px;
+            height: 80px;
+            position: relative;
+            top: 5px;
+            left: 30px;
+            display: inline;
+        }
+
+        #newspage {
+            position: relative;
+            top: -3px;
+            font-size: x-large;
+            color: #00b894;
+        }
+
+        .image {
+            opacity: 0.7;
+            width: 380px;
+            height: 250px;
+            margin-left: 80px;
+        }
+
+        .image:hover {
+            border-radius: 10%;
+            opacity: 1.0;
+            width: 400px;
+            height: auto;
+        }
+
+        .column {
+            margin-top: 25px;
+            float: left;
+            width: 33.33%;
+            padding: 15px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .column {
+            padding: 5px;
+            text-align: left;
+
+        }
+
+        .column h2 {
+            margin-bottom: 19px;
+            margin-top: 20px;
+            text-align: center;
+            font-family: 'Ubuntu Mono', monospace;
+            color: #5352ed;
+            background-color: white;
+            border: 3px solid #5352ed;
+           
+
+            
+
+        }
+
+        .column p {
+            margin-left: 40px;
+            text-align: center;
+            font-family: 'Noto Sans KR', sans-serif;
+            letter-spacing: 0.5px;
+        }
+
+        div.column span {
+            text-decoration: none;
+            font-weight: lighter;
+            background-color: #227093;
+            color: white;
+            letter-spacing: 1.8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="home">
+        <header id="banner">
+            <div id="logo">
+                <a href="home.html"><img src="images/logo6.png" alt="Logo of the website"></a>
+                <div id="headline">
+                    <h1>NEWS FROM THE WORLD</h1>
+                </div>
+            </div>
+        </header>
+        <nav id="mainmenu">
+            <ul>
+                <li><a href="home.html"><span id="homepage">HOME</span></a></li>
+                <li><a href="news.html"><span id="newspage">NEWS</span></a></li>
+                <li><a href="culture.html"><span id="culturepage">CULTURE</span></a></li>
+                <li><a href="travel.html"><span id="travelpage">TRAVEL</span></a></li>
+                <li><a href="sport.html"><span id="sportpage">SPORT</span></a></li>
+                <li><a href="signin.html"><span id="signinpage">SIGN IN</span></a></li>
+                <li><a href="more.html"><span id="morepage">MORE</span></a></li>
+                <!-- <div class="searchBox">
+                        <input class="searchText" type="text" name="searchText" placeholder="Search in PSVNews!">
+                        <a class="searchButton" href="#"></a>
+                        <i class="fas fa-search"></i>
+
+
+                    </div> -->
+                <form id="searchBox" method=GET action="http://www.google.com/search" autocomplete="off">
+                    <label>
+                        <input id="searchText" type="text" name="search" size=30 maxlength=200
+                            placeholder="Search in PSVNews!">
+                    </label>
+                    <input type=hidden name=hl value="en">
+                    <button id="submitButton" type=submit name=search> Search </button>
+                </form>
+
+            </ul>
+
+        </nav>
+        <div style="width: 1375px; height: auto;" class="row">
+            <div class="column">
+                <h2>Moment Nasa reacts to successful Ingenuity flight</h2>
+                <p>
+                    The American space agency has successfully flown a small helicopter on Mars.
+
+                    The drone, called Ingenuity, was airborne for less than a minute, but Nasa is celebrating what
+                    represents the first powered, controlled flight by an aircraft on another world.
+
+                    Confirmation came via a satellite at Mars which relayed the chopper's data back to Earth.
+                    </p>
+                    <br>
+                    <iframe style="margin-left: 40px;" width="400" height="260" src="https://www.youtube.com/embed/dzXivu1iMV0" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <br>
+            </div>
+
+            <div class="column">
+                <h2>Prince Philip funeral: Duke of Edinburgh laid to rest</h2>
+                <p>
+                    The Duke of Edinburgh was laid to rest in an intimate funeral at St George's Chapel.
+
+                    Due to coronavirus restrictions, the Queen was seated alone and only 30 people were able to attend.
+                    
+                    To mark the start of the service, a minute’s silence was held across the country.
+                    
+                    Prince Philip died at Windsor Castle on Friday 9 April, aged 99.</p>
+                    <br>
+                    <img style="position: relative; left: -35px;" class="image"
+                        src="images/prince-philip.jpg"><br><br>
+            </div>
+
+            <div class="column">
+                <h2>Why are so many babies dying of Covid-19 in Brazil?</h2>
+                <p>
+                    More than a year into the pandemic, deaths in Brazil are now at their peak. But despite the overwhelming evidence that Covid-19 rarely kills young children, in Brazil 1,300 babies have died from the virus.
+                    While coronavirus is infectious to children, it is rarely serious. If your child is unwell it is likely to be a non-coronavirus illness, rather than coronavirus itself.
+                </p> <br>
+                <img style="position: relative; left: -35px;" class="image"
+                    src="images/coronavirus_baby.jpg"><br><br>
+
+
+            </div>
+
+        </div>
+        <div style="width: 1375px; height: auto;" class="row">
+
+            <div class="column" style="padding-left:250px;">
+                <h2 style="position:relative; left: 125px;">News 4</h2>
+                <p style="width: 400px;">
+
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque consequat dolor at leo congue
+                    egestas. Donec dignissim dolor at lectus rutrum tristique. Nam eu imperdiet mauris, in sodales eros.
+                    Aenean ut porta orci. Maecenas pulvinar nibh id tempor lobortis. Orci varius natoque penatibus et
+                    magnis dis parturient montes, nascetur ridiculus mus. Mauris ac lectus vel massa malesuada accumsan
+                    nec dignissim magna. Nam molestie elit diam, ut sagittis mi mattis a. </p> <br>
+                <img class="image"
+                    src="https://images.pexels.com/photos/6764351/pexels-photo-6764351.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"><br><br>
+            </div>
+
+            <div class="column" style="padding-left:250px;">
+                <h2 style="position:relative; left: 125px;">News 5</h2>
+                <p style="width: 400px;">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque consequat dolor at leo congue
+                    egestas. Donec dignissim dolor at lectus rutrum tristique. Nam eu imperdiet mauris, in sodales eros.
+                    Aenean ut porta orci. Maecenas pulvinar nibh id tempor lobortis. Orci varius natoque penatibus et
+                    magnis dis parturient montes, nascetur ridiculus mus. Mauris ac lectus vel massa malesuada accumsan
+                    nec dignissim magna. Nam molestie elit diam, ut sagittis mi mattis a.
+                </p> <br>
+                <img class="image"
+                    src="https://images.pexels.com/photos/3277808/pexels-photo-3277808.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"><br><br>
+
+            </div>
+        </div>
+        <div style="width: 1375px; height: auto;" class="row">
+            <div class="column">
+                <h2>News 6</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque consequat dolor at leo congue
+                    egestas. Donec dignissim dolor at lectus rutrum tristique. Nam eu imperdiet mauris, in sodales eros.
+                    Aenean ut porta orci. Maecenas pulvinar nibh id tempor lobortis. Orci varius natoque penatibus et
+                    magnis dis parturient montes, nascetur ridiculus mus.
+                    Mauris ac lectus vel massa malesuada accumsan nec dignissim magna. Nam molestie elit diam, ut
+                    sagittis mi mattis a.</p><br>
+                <img class="image"
+                    src="https://images.pexels.com/photos/3886870/pexels-photo-3886870.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"><br><br>
+            </div>
+
+            <div class="column">
+                <h2>News 7</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque consequat dolor at leo congue
+                    egestas. Donec dignissim dolor at lectus rutrum tristique. Nam eu imperdiet mauris, in sodales eros.
+                    Aenean ut porta orci. Maecenas pulvinar nibh id tempor lobortis. Orci varius natoque penatibus et
+                    magnis dis parturient montes, nascetur ridiculus mus. Mauris ac lectus vel massa malesuada accumsan
+                    nec dignissim magna. Nam molestie elit diam, ut sagittis mi mattis a.</p><br>
+                <img class="image"
+                    src="https://images.pexels.com/photos/974320/pexels-photo-974320.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"><br><br>
+            </div>
+
+            <div class="column">
+                <h2>News 8</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque consequat dolor at leo congue
+                    egestas. Donec dignissim dolor
+                    at lectus rutrum tristique. Nam eu imperdiet mauris, in sodales eros. Aenean ut porta orci. Maecenas
+                    pulvinar nibh id
+                    tempor lobortis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                    mus. Mauris ac lectus vel
+                    malesuada accumsan nec dignissim magna. Nam molestie elit diam, ut sagittis mi mattis a.
+                </p> <br>
+                <img class="image"
+                    src="https://images.pexels.com/photos/1271619/pexels-photo-1271619.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"><br><br>
+
+
+            </div>
+
+        </div>
+
+        <footer>
+            <p>All rights deserved by Pelin Sena Varol - 2021</p>
+        </footer>
+
+</body>
+
+</html>

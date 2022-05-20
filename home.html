@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NEWS FROM THE WORLD - PSVNews - News, sport, travel, culture and more.">
+    <meta name="keywords" content="News, Sport, Travel, Culture, PSVNews">
+    <meta name="author" content="Pelin Sena Varol">
+    <!--   <script src="https://kit.fontawesome.com/ca37223591.js" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>NEWS - PSVNews</title>
+    <style>
+        #logo {
+            width: 150px;
+            height: 80px;
+            position: relative;
+            top: 5px;
+            left: 30px;
+            display: inline;
+        }
+
+        #homepage {
+            position: relative;
+            top: -3px;
+            font-size: x-large;
+            color: #00b894;
+        }
+
+        .image {
+            opacity: 0.8;
+            width: 300px;
+            height: 200px;
+            margin-left: 75px;
+        }
+
+        .image:hover {
+            opacity: 1.0;
+            border-radius: 10%;
+            width: 340px;
+            height: auto;
+        }
+
+        .column {
+            margin-top: 25px;
+            float: left;
+            width: 33.33%;
+            padding: 15px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .column {
+          padding: 5px;
+          text-align: left;
+         
+        }
+
+        .column h2 {
+            margin-bottom: 19px;
+            margin-top: 20px;
+            text-align: center;
+            font-family: 'Ubuntu Mono', monospace;
+            color:#82589F;
+            background-color: beige;
+            border: 3px solid #82589F;
+            border-radius: 0px 25px 0px 25px;
+            
+        }
+        .column p {
+            margin-left: 40px;
+            text-align: center;
+            font-family: 'Noto Sans KR', sans-serif;
+            letter-spacing: 0.5px;
+        }
+
+        div.column span {
+            text-decoration: none;
+            font-weight: lighter; 
+            background-color:#227093; 
+            color: white; 
+            letter-spacing: 1.8px;
+        }
+        footer {
+            height: 40px;
+            letter-spacing: 2.5px;
+            font-weight: bolder;
+            text-align: center;
+            /*background-color: #58B19F;*/
+            background-color: #dff9fb;
+            
+        }
+        footer p {
+            text-shadow: cadetblue;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="home">
+        <header id="banner">
+            <div id="logo">
+                <a href="home.html"><img src="images/logo6.png" alt="Logo of the website"></a>
+                <div id="headline">
+                    <h1>NEWS FROM THE WORLD</h1>
+                </div>
+            </div>
+        </header>
+        <nav id="mainmenu">
+            <ul>
+                <li><a href="home.html"><span id="homepage">HOME</span></a></li>
+                <li><a href="news.html"><span id="newspage">NEWS</span></a></li>
+                <li><a href="culture.html"><span id="culturepage">CULTURE</span></a></li>
+                <li><a href="travel.html"><span id="travelpage">TRAVEL</span></a></li>
+                <li><a href="sport.html"><span id="sportpage">SPORT</span></a></li>
+                <li><a href="signin.html"><span id="signinpage">SIGN IN</span></a></li>
+                <li><a href="more.html"><span id="morepage">MORE</span></a></li>
+                <!-- <div class="searchBox">
+                        <input class="searchText" type="text" name="searchText" placeholder="Search in PSVNews!">
+                        <a class="searchButton" href="#"></a>
+                        <i class="fas fa-search"></i>
+
+
+                    </div> -->
+                <form id="searchBox" method=GET action="http://www.google.com/search" autocomplete="off">
+                    <label>
+                        <input id="searchText" type="text" name="search" size=30 maxlength=200
+                            placeholder="Search in PSVNews!">
+                    </label>
+                    <input type=hidden name=hl value="en">
+                    <button id="submitButton" type=submit name=search> Search </button>
+                </form>
+
+            </ul>
+
+        </nav>
+        <div style="width: 1375px; height: auto;" class="row">
+            <div class="column">
+                <h2>News</h2>
+                <p>Welcome to PSVNews! You can access many news free of charge on our website. There are a lot of different subjects here. 
+                    Don't forget to register and sign-in. Have a good read! If you are also producing content and want us to share your news, be sure to contact us! The world is beautiful as it shares knowledge. We are glad to see you here.</p> <br>
+                <img class="image" src="https://images.pexels.com/photos/3886870/pexels-photo-3886870.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+            </div>
+
+            <div class="column">
+                <h2>Culture</h2>
+                <p>Culture is a word for the 'way of life' of groups of people, meaning the way they do things. Different groups may have different cultures. 
+                A culture is passed on to the next generation by learning, whereas genetics are passed on by heredity. Culture is seen in people's writing, religion, music, clothes, cooking and in what they do.
+                To see the developments from different cultures and different parts of the world visit our <a href="culture.html"><span>Culture</span></a> page!</p> <br>
+                <img class="image" src="https://images.pexels.com/photos/974320/pexels-photo-974320.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260">
+            </div>
+           
+            <div class="column">
+                <h2>Travel</h2>
+                <p>Would you like to feel like you've had different experiences without going anywhere? You are in the right place. In this part of our site, 
+                    you can find the notes, photos and suggestions of people who have gone to different parts of the world. Maybe this way you can choose the 
+                    right place for you and go on a tiny journey!
+                </p> <br>
+                <img class="image" src="https://images.pexels.com/photos/1271619/pexels-photo-1271619.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+
+
+            </div>
+          
+        </div>
+        <div style="width: 1375px; height: auto;" class="row">
+
+            <div class="column">
+                <h2>Sport</h2>
+                <p>
+                    What is happening in the sports field in the world, from basketball to tennis, tennis to swimming and even the Olympics? 
+                    How are the Champions League matches, what are the fixtures and standings? What are the results and statistics of the 
+                    current matches? You can find all of them on our sport page. </p> <br>
+                <img class="image" src="https://images.pexels.com/photos/6764351/pexels-photo-6764351.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+            </div>
+
+            <div class="column">
+                <h2>Sign-In</h2>
+                <p>If you register and log in, you can be instantly informed about the developments and current news on our site. We can direct you 
+                    according to your interests. Do not forget to fill out the registration form and choose your interests carefully. 
+                    You can be sure that we will provide you with the best service.
+                </p> <br>
+                <img class="image" src="https://images.pexels.com/photos/3277808/pexels-photo-3277808.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+                
+            </div>
+
+       
+
+           
+            <div class="column">
+                <h2>More</h2>
+                <p>
+                    You can access information about us and our contact information from the <a href="culture.html"><span >More</span></a> page. Do not hesitate to contact us when needed! 
+                    With your feedback, we are waiting for your suggestions and requests! Now we can start browsing the site!</p> <br>
+                <img class="image" src="https://images.pexels.com/photos/3643925/pexels-photo-3643925.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"> <br><br><br><br>
+
+
+            </div>
+        </div>
+       
+    </div>
+    <footer>
+        <p>All rights deserved by Pelin Sena Varol - 2021</p>
+    </footer>
+  
+
+
+
+</body>
+
+</html>

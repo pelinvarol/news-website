@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NEWS FROM THE WORLD - PSVNews - News, sport, travel, culture and more.">
+    <meta name="keywords" content="News, Sport, Travel, Culture, PSVNews">
+    <meta name="author" content="Pelin Sena Varol">
+    <title>SIGN IN - PSVNews</title>
+
+    <style>
+        body {
+            background: #00b894;
+        }
+
+        h1, h3 {
+            color: #192a56;
+
+        }
+
+
+
+        form {
+            width: 30%;
+            margin: 60px auto;
+            background: #efefef;
+            padding: 60px 120px 80px 120px;
+            text-align: center;
+            -webkit-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
+            box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        a {
+            text-decoration: none;
+            color: #218c74;
+
+        }
+
+        a:hover {
+            color: #58B19F;
+            font-size: larger;
+            font-weight: bolder;
+        }
+
+
+        label {
+            display: block;
+            position: relative;
+            margin: 40px 0px;
+        }
+
+        .label-txt {
+            position: absolute;
+            top: -26px;
+            padding: 10px;
+            font-family: 'Russo One', sans-serif;
+            font-size: 13px;
+            letter-spacing: 1px;
+            color: #787878;
+            transition: ease .3s;
+        }
+
+        label[for="rememberMe"] {
+            display: inline;
+            font-weight: bolder;
+            font-size: 15px;
+            color: #222f3e;
+        }
+
+
+        .input {
+            width: 100%;
+            padding: 10px;
+            background: transparent;
+            border: none;
+            outline: none;
+        }
+
+        .line-box {
+            position: relative;
+            width: 100%;
+            height: 1px;
+            background: #d1ccc0;
+        }
+
+        .line {
+            position: absolute;
+            width: 0%;
+            height: 2px;
+            top: 0px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #218c74;
+            transition: ease 0.4s;
+        }
+
+        .input:focus+.line-box .line {
+            width: 100%;
+        }
+
+
+
+
+        .label-active {
+            top: -48px;
+        }
+
+        button {
+            display: inline-block;
+            text-transform: uppercase;
+            padding: 12px 24px;
+            letter-spacing: 1.5px;
+            background: #d1ccc0;
+            font-weight: normal;
+            color: #222f3e;
+            border: none;
+            outline: none;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: ease .3s;
+        }
+
+        button:hover {
+            background: #58B19F;
+            color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+
+        <form>
+            <h1>WELCOME TO PSVNews!</h1>
+            <h3>Sign-In now, and join us!</h3>
+
+
+            <label>
+                <input type="email" class="input" name="email" placeholder="Enter your most used e-mail address" />
+                <div class="line-box">
+                    <div class="line"></div>
+                </div>
+            </label>
+
+            <label>
+                <input type="password" class="input" name="password"
+                    placeholder="Enter your password here. I'm not looking, promise!" />
+                <div class="line-box">
+                    <div class="line"></div>
+                </div>
+            </label>
+
+            <!-- <label>
+                <input type="checkbox" class="input" name="rememberme" value="Remember Me!" />
+                <div class="line-box">
+                    <div class="line"></div>
+                </div>
+            </label>-->
+
+            <input type="checkbox" value="RememberMe" id="rememberMe"> <label for="rememberMe"> Remember
+                Me&nbsp;&nbsp;&nbsp;&nbsp;</label>
+
+            <button type="submit">Sign-In</button>
+            <p>Don't you have an account yet? <a href="register.html">Register Now!</a></p>
+            <br>
+            <!-- <div><a href="home.html"><img src="https://img.icons8.com/cotton/64/000000/home--v3.png"/></a></div>-->
+            <div><a href="home.html"><img src="https://img.icons8.com/ios/50/000000/home-screen.png" /></a></div>
+        </form>
+
+    </div>
+</body>
+
+</html>
