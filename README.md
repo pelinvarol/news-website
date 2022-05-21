@@ -28,7 +28,6 @@
 ![NEWS - PSVNews - Google Chrome 20 05 2022 17_46_40](https://user-images.githubusercontent.com/73114058/169557502-76bd9005-17a9-4919-acf9-adafef2d7b1f.png)
 
 
-![NEWS - PSVNews - Google Chrome 20 05 2022 17_47_13 (1)](https://user-images.githubusercontent.com/73114058/169557544-758f1ad6-6859-4ee4-8373-c8c4d1e67365.png)
 
 
 
